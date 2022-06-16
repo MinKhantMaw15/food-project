@@ -1,0 +1,226 @@
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    opacity: 0.6;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: orange;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: orangered;
+    color: wheat;
+  }
+  .header1{
+    color: orange;
+    letter-spacing: 10px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 10px;
+  }
+  .head1{
+    color: orangered;
+    letter-spacing: 5px;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 10px;
+  }
+  .letter{
+    color: white;
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #fff;
+    --grey-color: #666;
+    --dar-blue-color: hsl(223deg 57% 12%);
+    --medium-font-size: 20px;
+    --small-font-size: 16px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+
+/* -======= Contact =====- */
+.slider{
+  background-color: black;
+  height: 100vh;
+  position: absolute;
+}
+.contact {
+    position: absolute;
+    margin-top: 50px;
+    top: 0%;
+    color: white;
+}
+
+.cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+contact-text {
+    flex-basis: 48%;
+}
+
+.contact-text p {
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-right: 40px;
+}
+
+.contact-text h6,
+.contact-text .address,
+.contact-text .mail {
+    font-size: var(--medium-font-size);
+}
+
+.contact-text h6 {
+  color: orange;
+}
+
+.contact-form {
+    flex-basis: 48%;
+}
+
+.cont .contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cont .contact-form form label {
+    font-size: var(--medium-font-size);
+    padding: 10px 0;
+}
+
+.cont .contact-form form input,
+.cont .contact-form form textarea {
+    font-size: var(--medium-font-size);
+    padding: 10px 0;
+    resize: none;
+    margin: 6px 0;
+    border-radius: 12px;
+    outline: none;
+    border: 2px solid var(--grey-color);
+}
+
+.cont .contact-form form input[type="submit"] {
+    margin: 16px 0;
+    margin-left: 70px;
+    width: 200px;
+    background-color: orange;
+    cursor: pointer;
+    border: 2px solid orange;
+    font-size: var(--medium-font-size);
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+.cont .contact-form form input[type="submit"]:hover {
+  background-color: orangered;
+    color: gold;
+    border: 2px solid orangered;
+    font-weight: 600;
+}
+
+/* -======= Media Queriers =====- */
+
+@media (max-width: 500px) {
+    .cont {
+        display: block;
+        flex-direction: column;
+    }
+    .contact {
+        padding-top: 0;
+    }
+    .cont .contact-form form input,
+    .cont .contact-form form textarea {
+        width: 100%;
+    }
+    .cont .contact-form form input[type="submit"] {
+        width: 30%;
+        margin: auto;
+        font-size: var(--small-font-size);
+    }
+    .contact-text{
+      display: none;
+    }
+    #myBtn{
+      display: none;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+    .cont {
+        display: block;
+        flex-direction: column;
+    }
+    .contact {
+        padding-top: 0;
+    }
+    .cont .contact-form form input,
+    .cont .contact-form form textarea {
+        width: 100%;
+    }
+    .cont .contact-form form input[type="submit"] {
+        width: 30%;
+        margin: auto;
+        font-size: var(--small-font-size);
+    }
+    .contact-text{
+      display: none;
+    }
+    #myBtn{
+      display: none;
+    }
+}

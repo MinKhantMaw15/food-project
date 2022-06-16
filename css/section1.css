@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #000000;
+}
+.logo{
+    color: orange;
+    letter-spacing: 5px;
+    font-size: 25px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.menu{
+    display: flex;
+    color: white;
+    width: 30%;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.menu li{
+    list-style: none;
+}
+.menu a{
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+}
+.menu a:hover{
+    color: orangered;
+}
+.order{
+    display: none;
+}
+.btn {
+    position: absolute;
+    right: 5%;
+    padding: 5px 27px;
+    top: 2%;
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background: orange;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+}
+.btn.btn-border-4::after,
+.btn.btn-border-4::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transition: .5s;
+}
+.btn.btn-border-4::after {
+    top: -9px;
+    left: -9px;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.btn.btn-border-4::before {
+    bottom: -9px;
+    right: -9px;
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+.btn-border-4:hover {
+    background-color: white;
+    border: 1px solid gold;
+}
+.btn.btn-border-4:hover::after,
+.btn.btn-border-4:hover::before {
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    border-color: gold;
+}
+.menu-icon{
+    display: none;
+}
+.menu-icon div{
+    background-color: white;
+    width: 25px;
+    height: 2px;
+    margin: 5px 0;
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 1010px){
+    .logo{
+        font-size: 25px;
+    }
+    .menu{
+        font-size: 20px;
+        width: 30%;
+    }
+    .btn{display: none;
+    }
+    .order{
+        display: block;
+    }
+}
+@media screen and (max-width: 768px){
+    body{
+        overflow: hidden;
+    }
+    
+    .logo{
+        font-size: 25px;
+        position: absolute;
+        left: 40%;
+    }
+    .menu{
+        position:  absolute;
+        right: 0;
+        top: 8vh;
+        height: 92vh;
+        background-color: black;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+        z-index: 10;
+    }
+    .menu li{
+        opacity: 0;
+    }
+    .menu-icon{
+        display: block;
+        position: absolute;
+        right: 10%;
+        cursor: pointer;
+    }
+    .order{
+        display: block;
+    }
+}
+.menu-active{
+    transform: translateX(0%);
+}
+@keyframes menuFade{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .div1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .div2{
+    opacity: 0;
+}
+.toggle .div3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
