@@ -2,12 +2,7 @@ const express = require('express');
 const app = express();
  
 app.use(express.static("public"));
-app.get('/', (req, res) => {
-  res
-    .status(200)
-    .send('Hello server is running')
-    .end();
-});
+app.get('/', (req, res) => {});
  
 // Start the server
 const PORT = process.env.PORT || 8080;
