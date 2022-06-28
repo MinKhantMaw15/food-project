@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+        overflow: scroll; /* Show scrollbars */
+}
 nav{
     display: flex;
     justify-content: space-around;
@@ -115,6 +118,7 @@ nav{
 @media screen and (max-width: 768px){
     body{
         overflow: hidden;
+        overflow: scroll;
     }
     
     .logo{
