@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Soft Drinks</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bgvd.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>ShinKAN</h1>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Service</a>
+                </li>
+                <li>
+                    <a href="#">Order Now</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+            <div class="menu-icon">
+                <div class="div1"></div>
+                <div class="div2"></div>
+                <div class="div3"></div>
+            </div>
+        </nav>
+
+        <!-- The video -->
+        <video autoplay muted loop id="myVideo">
+            <source src="vd/bdvd.MP4" type="video/mp4">
+        </video>
+
+        <!-- Optional: some overlay text to describe the video -->
+        <div class="content">
+            <h1>ShinKan</h1>
+            <p>Click the "Choose" button and choose what you want.</p>
+            <!-- Use a button to pause/play the video with JavaScript -->
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+        </div>
+
+        <section class="sec1">
+            <div class="intro">
+                <h1 class="header1">Welcome from ShinKAN Vending Machine.</h1>
+                <h3 class="header3">Available Soft drinks are as following:</h3>
+            </div>
+
+            <div class="amount">
+                <h2>"Your Money"</h2>
+                <h3 id="money"></h3>
+            </div>
+
+            <div class="tablelist">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th class="noimain">No of Items</th>
+                        </tr>
+                    </thead>
+                    <tbody id="vendingtable"></tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="center">Choose</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="pickup-container">
+                <div class="svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="20" height="20" x="0" y="0" viewbox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                        <g><polygon xmlns="http://www.w3.org/2000/svg" points="24.061 2.061 21.939 -0.061 12 9.879 2.061 -0.061 -0.061 2.061 9.879 12 -0.061 21.939 2.061 24.061 12 14.121 21.939 24.061 24.061 21.939 14.121 12 24.061 2.061" fill="#ff0000" data-original="#000000"/></g>
+                    </svg>
+                </div>
+                <div class="pickup">
+                    <div class="brands">
+                        <label for="brands">
+                            <h4>Choose What you want</h4>
+                        </label>
+                        <select name="cars" id="brands">
+                            <option value="" selected>Select Box</option>
+                            <option value="Coke">Coke</option>
+                            <option value="Pepsi">Pepsi</option>
+                            <option value="Milk Tea">Milk Tea</option>
+                            <option value="Orange Juice">Orange Juice</option>
+                            <option value="Coffee">Coffee</option>
+                        </select>
+                    </div>
+
+                    <div class="no-of-items">
+                        <label for="No of Items">
+                            <h4>No of Items</h4>
+                        </label>
+                        <input type="number" placeholder="You can get how much i have!" id="nmb">
+                    </div>
+                </div>
+                <button id="my-btn">Order</button>
+            </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js" integrity="sha512-5nTpER5HrSoRPyd8szIn2QglL3A54KJs4XOcX3SdHTbLb8TO/5wLqoFYSFGNyhzZy7CFAOZf66X3ikr2v7Bfuw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="js/app.js"></script>
+        <script src="js/bgvd.js"></script>
+        <script src="js/animation.js"></script>
+        <script src="js/vendinig-machine.js"></script>
+    </body>
+</html>

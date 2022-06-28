@@ -1,0 +1,114 @@
+.sec3 {
+  height: 100%;
+}
+.header11 {
+  line-height: 100vh;
+  color: black;
+  background-color: rgb(196, 132, 109);
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  font-size: 5rem;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+.header11:hover {
+  background-color: coral;
+  color: white;
+}
+.header11:active {
+  background-color: rgb(236, 231, 229);
+  color: green;
+}
+.container-sec3 {
+  background-color: orange;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  position: relative;
+  z-index: -1;
+  transition: all ease-in-out 1s;
+}
+
+.header11-active {
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+}
+.container-sec3-active {
+  opacity: 1;
+  z-index: 0;
+}
+.sec3-intro {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.sec3-dis-img {
+  width: 200px;
+  height: 200px;
+}
+.sec3-dis-img img {
+  width: 100%;
+  height: 100%;
+}
+.sec3-header h1 {
+  text-align: center;
+  justify-content: center;
+  line-height: 200px;
+  font-weight: 500;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  color: white;
+  text-shadow: -3px 8px 3px rgba(245, 16, 16, 0.64);
+  font-size: 4rem;
+}
+.sec3-divs img {
+  width: 100%;
+  height: 200px;
+  cursor: pointer;
+  transition: all ease-in-out 0.6s;
+}
+.sec3-divs {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 150px;
+}
+.sec3-divs div {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  color: orange;
+  text-align: center;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 4px 8px 13px -1px rgba(51, 48, 48, 0.75);
+  -webkit-box-shadow: 4px 8px 13px -1px rgba(51, 48, 48, 0.75);
+  -moz-box-shadow: 4px 8px 13px -1px rgba(51, 48, 48, 0.75);
+  transition: all ease-in-out 0.7s;
+}
+.sec3-divs h1 {
+  font-size: 30px;
+  background-color: red;
+  color: white;
+  font-weight: 300;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 5px;
+  transition: ease-in-out 0.7s all;
+}
+.sec3-divs div:hover h1 {
+  background-color: white;
+  color: red;
+}
+.sec3-divs div:hover {
+  background-color: red;
+  box-shadow: 7px 8px 13px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 7px 8px 13px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 8px 13px -1px rgba(0, 0, 0, 0.75);
+}
+.sec3-divs div:hover p {
+  color: white;
+}
+.sec3-divs p {
+  font-size: 15px;
+  transition: ease-in-out all 0.7s;
+}

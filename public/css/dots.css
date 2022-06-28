@@ -1,0 +1,21 @@
+.dots{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 40%;
+    right: 0%;
+}
+.dots a{
+    background-color: grey;
+    color: gray;
+    opacity: 0.5;
+    width: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    height: 15px;
+    border-radius: 50%;
+}
+.dots a:hover{
+    background-color: black;
+    color: black;
+}
